@@ -3,6 +3,7 @@
 	Author: James Climer (http://climers.com)
 	Released under the Apache V2 License: http://www.apache.org/licenses/LICENSE-2.0.html
 	Requires JQuery: http://jquery.com	
+	Get latest version from: https://github.com/jaclimer/JQuery-DraggScroll
 	
     options: Currently not used
 */
