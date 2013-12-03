@@ -1,0 +1,35 @@
+<html>
+<head>
+	<style>
+		#container { height:400px; width:500px; border:1px solid #000;overflow:auto; }
+	</style>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.dragscroll.js"></script>
+	<script>
+		$(document).ready(function() { 
+			$('#container').dragScroll({});
+		});
+	</script>
+</head>
+<body>
+	<h1>JQuery.dragScroll()</h1>
+	<p>
+		A JQuery extension for making the contents of a container scrollable by clicking and dragging
+	</p>
+	Example:
+	<div id="container">
+		<div style="width:800px;padding:10px;">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum tellus nec gravida venenatis. Fusce tempor fermentum leo, ac condimentum orci gravida eget. Nam pellentesque, sapien vitae elementum posuere, libero est accumsan libero, a ultricies augue nisi eu nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin risus neque, non porta mi vehicula sed. Nam semper imperdiet libero, eget ornare mauris. Aliquam sodales congue ante nec molestie. In ac nulla vitae ante lacinia pulvinar. Morbi vehicula nisl ante, sit amet convallis massa facilisis quis. Vestibulum vulputate est a augue dictum ultricies.</p>
+
+			<p>In eget est vitae libero vulputate dictum vel ac felis. Maecenas et tortor nec felis posuere viverra ut eget elit. Phasellus eu pellentesque sapien. Morbi porttitor nulla eget libero viverra consequat. Nunc metus nisi, gravida eu elit sed, cursus malesuada orci. Phasellus tempus enim vitae arcu imperdiet porta. Vestibulum eu nisl congue, aliquam turpis quis, vulputate odio. Quisque sed rhoncus elit. Proin viverra molestie malesuada. Phasellus scelerisque tristique nisi adipiscing aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque vel dictum dolor, ac congue libero. Sed adipiscing pretium massa vel imperdiet. In faucibus sed arcu eu sodales.</p>
+
+			<p>In dapibus rutrum mi, a posuere orci venenatis a. Suspendisse ligula nisl, bibendum eu vehicula eu, dictum pharetra tellus. Aenean vel mattis felis. Maecenas est tellus, aliquam in velit nec, mattis imperdiet est. Nullam mattis condimentum ante tempus eleifend. Aliquam dapibus nibh diam, non dictum erat pharetra in. Quisque posuere nulla vitae massa sagittis porta. Ut lacinia lorem vitae blandit ornare. Integer porta nunc eget nibh blandit, vel laoreet metus laoreet.</p>
+
+			<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at risus justo. Proin sit amet porttitor justo. Sed augue dolor, fermentum non ornare vitae, pellentesque a turpis. Vestibulum porta posuere aliquet. Cras vel interdum ligula, vitae tempus dolor. Cras non arcu in massa bibendum vestibulum et eget leo. Phasellus felis metus, dapibus quis pharetra sed, porttitor eu risus. Proin cursus turpis non turpis posuere facilisis.</p>
+
+			<p>Maecenas venenatis massa vitae lacinia rhoncus. Suspendisse fringilla mattis enim id elementum. Pellentesque id tempus sapien, ut laoreet erat. Curabitur consectetur enim vel condimentum luctus. Duis eu sapien nunc. Nulla porta gravida nulla nec lobortis. Donec a ultricies quam, ac aliquet quam. Sed commodo luctus fringilla. Integer eu malesuada nisi, vitae laoreet turpis. Duis nec ligula sed nisi accumsan egestas. Pellentesque at volutpat nunc. Proin pretium elit sem, egestas ornare purus fermentum sit amet. Donec pharetra libero id odio molestie lacinia ut sed urna.</p>
+		</div>
+	</div>
+</body>
+</html>
