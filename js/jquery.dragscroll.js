@@ -16,12 +16,15 @@
         $($scrollArea).attr("onselectstart", "return false;");   // Disable text selection in IE8
 
         $($scrollArea).mousedown(function (e) {
-            e.preventDefault();
-            down = true;
-            x = e.pageX;
-            y = e.pageY;
-            top = $(this).scrollTop();
-            left = $(this).scrollLeft();
+            if(typeof options.limitTo == "object") {
+                for(var i = 0; i < options.limitTo.length; i++) {
+                    if($(e.target).hasClass(options.limitTo[i])) {
+                        doMousedown(e);
+                    }
+                }
+            } else {
+                doMousedown(e);
+            }
         });
         $($scrollArea).mouseleave(function (e) {
             down = false;
@@ -35,5 +38,14 @@
             }
         });
         $("body").mouseup(function (e) { down = false; });
+
+        function doMousedown(e) {
+            e.preventDefault();
+            down = true;
+            x = e.pageX;
+            y = e.pageY;
+            top = $(this).scrollTop();
+            left = $(this).scrollLeft();
+        }
     };
 })(jQuery);
