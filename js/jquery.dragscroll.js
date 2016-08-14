@@ -44,8 +44,8 @@
             down = true;
             x = e.pageX;
             y = e.pageY;
-            top = $(this).scrollTop();
-            left = $(this).scrollLeft();
+            top = $($scrollArea).scrollTop();
+            left = $($scrollArea).scrollLeft();
         }
     };
 })(jQuery);
